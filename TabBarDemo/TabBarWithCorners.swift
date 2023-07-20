@@ -25,7 +25,7 @@ class TabBarWithCorners: UITabBar {
         shapeLayer.path = createPath() // 創建 Tab Bar 的形狀路徑
         shapeLayer.strokeColor = UIColor.gray.cgColor
         shapeLayer.fillColor = color?.cgColor ?? UIColor.white.cgColor // 設定 Tab Bar 的填充顏色，如果 color 屬性為空則使用白色
-        shapeLayer.lineWidth = 1
+        shapeLayer.lineWidth = 0
         shapeLayer.shadowColor = UIColor.gray.cgColor
         shapeLayer.shadowOffset = CGSize(width: 0, height: -2);
         shapeLayer.shadowOpacity = 0.21
